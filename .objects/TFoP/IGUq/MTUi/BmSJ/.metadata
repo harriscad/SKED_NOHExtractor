@@ -1,0 +1,13 @@
+﻿{
+  "Name": "License Type",
+  "Type": "Element",
+  "Id": "BmSJX1Rgp02lgRlJ5FBUaA",
+  "Reference": "dt6Y-zIgYEmNBPBvjWvW7A/BmSJX1Rgp02lgRlJ5FBUaA",
+  "ParentRef": "dt6Y-zIgYEmNBPBvjWvW7A/MTUiGGfnT0ywhEoth2FzBQ",
+  "Created": "2026-10-05T16:24:43.3903621Z",
+  "Updated": "2026-10-05T16:24:43.3903621Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Arbitrator Registry",
+  "Type": "Screen",
+  "Id": "MTUiGGfnT0ywhEoth2FzBQ",
+  "Reference": "dt6Y-zIgYEmNBPBvjWvW7A/MTUiGGfnT0ywhEoth2FzBQ",
+  "ParentRef": "dt6Y-zIgYEmNBPBvjWvW7A/IGUqxKOlZkuBEOnhSkXJ5g",
+  "Created": "2026-10-05T16:11:05.1541404Z",
+  "Updated": "2026-10-05T16:11:05.1541404Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

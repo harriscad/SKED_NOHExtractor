@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'License Type'",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "QG3xZoptNUelbsPtd33QaA",
+  "Reference": "dt6Y-zIgYEmNBPBvjWvW7A/QG3xZoptNUelbsPtd33QaA",
+  "ParentRef": "dt6Y-zIgYEmNBPBvjWvW7A/MTUiGGfnT0ywhEoth2FzBQ",
+  "Created": "2026-10-05T16:26:10.6369307Z",
+  "Updated": "2026-10-05T16:26:10.6369307Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

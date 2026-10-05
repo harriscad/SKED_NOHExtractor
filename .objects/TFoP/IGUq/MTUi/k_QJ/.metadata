@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Export data",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "k_QJ3qWRNUqVkyoqaDHgIQ",
+  "Reference": "dt6Y-zIgYEmNBPBvjWvW7A/k_QJ3qWRNUqVkyoqaDHgIQ",
+  "ParentRef": "dt6Y-zIgYEmNBPBvjWvW7A/MTUiGGfnT0ywhEoth2FzBQ",
+  "Created": "2026-10-05T16:31:50.9127482Z",
+  "Updated": "2026-10-05T16:31:50.9127482Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

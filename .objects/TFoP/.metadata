@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge Arbitrator Registry",
+  "Type": "App",
+  "Id": "TFoPuCQsZ0Ol03spz23P1w",
+  "Reference": "dt6Y-zIgYEmNBPBvjWvW7A/TFoPuCQsZ0Ol03spz23P1w",
+  "Created": "2026-10-05T16:11:04.5346546Z",
+  "Updated": "2026-10-05T16:11:04.5346546Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

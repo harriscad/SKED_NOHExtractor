@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'Data with current layou…'",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "Hy17t8xW5UiSB8_uSOuOiQ",
+  "Reference": "dt6Y-zIgYEmNBPBvjWvW7A/Hy17t8xW5UiSB8_uSOuOiQ",
+  "ParentRef": "dt6Y-zIgYEmNBPBvjWvW7A/MTUiGGfnT0ywhEoth2FzBQ",
+  "Created": "2026-10-05T16:37:13.7240602Z",
+  "Updated": "2026-10-05T16:37:13.7240602Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

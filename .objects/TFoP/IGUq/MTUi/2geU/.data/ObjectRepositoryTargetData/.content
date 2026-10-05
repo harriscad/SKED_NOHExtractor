@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uNprZEcqUEGVqIOjPA7cFA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="ptrp.app.cpa.state.tx.us/home/arbitratorregistry" CVScreenId="4b9fa146-2b68-45d0-8253-cf8ec72c12c6" CvTextArea="1662, 525, 21, 18" CvTextArgument="..." CvType="Text" DesignTimeRectangle="1661, 527, 24, 24" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl src='https://app.powerbigov.us/reportEmbed?reportId=*' tag='IFRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;report-embed&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;exploration-container&amp;gt;div&amp;gt;div&amp;gt;docking-container&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;exploration-host&amp;gt;div&amp;gt;div&amp;gt;exploration&amp;gt;div&amp;gt;explore-canvas&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;visual-container-repeat&amp;gt;visual-container&amp;gt;transform&amp;gt;div&amp;gt;visual-container-header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;visual-container-options-menu&amp;gt;visual-header-item-container&amp;gt;div&amp;gt;button&amp;gt;i' tag='I' /&gt;" Guid="8b563418-565c-4c59-9ebb-4177e2c92e53" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Arbitrator Registry' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b2b00579902e8ac8eca8d19efdf9e9f3.jpg" xmlns="">0fQtUcU6j4U63bClyb16uVQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

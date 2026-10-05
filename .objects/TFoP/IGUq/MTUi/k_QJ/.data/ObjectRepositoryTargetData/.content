@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="M90-WzAjBkeMdwRnPFbS2A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="ptrp.app.cpa.state.tx.us/home/arbitratorregistry" CVScreenId="ef756896-f84d-4435-ba8f-5fd4280c74a9" CvTextArea="1457, 561, 94, 22" CvTextArgument="Export data" CvType="Text" DesignTimeRectangle="1458, 561, 92, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl src='https://app.powerbigov.us/reportEmbed?reportId=35072b6a-c226-4513-b1d0-1a786a9cc15e&amp;amp;groupId=1e2bfb2c-9c1b-4884-bbca-f83c7171b191&amp;amp;w=2&amp;amp;config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLVVTLUdPVi1JT1dBLXJlZGlyZWN0LmFuYWx5c2lzLnVzZ292Y2xvdWRhcGkubmV0IiwiZW1iZWRGZWF0dXJlcyI6eyJ1c2FnZU1ldHJpY3NWTmV4dCI6dHJ1ZX19&amp;amp;uid=og380l' tag='IFRAME' matching:src='fuzzy' fuzzylevel:src='0.0' /&gt;&lt;webctrl aaname='Export data' parentid='0' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Export data' /&gt;" Guid="d282204a-d4f9-443d-ba37-7310996697fe" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Arbitrator Registry' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ef756896-f84d-4435-ba8f-5fd4280c74a9" CvTextArea="1457, 561, 94, 22" CvTextArgument="Export data" CvType="Text" DesignTimeRectangle="1386, 555, 270, 33" ElementType="Button" FuzzySelectorArgument="&lt;webctrl src='https://app.powerbigov.us/reportEmbed?reportId=*' matching:src='fuzzy' fuzzylevel:src='0.0' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' class='pbi-menu-item' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Export data' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Export data' /&gt;" Guid="ad4741dc-d25a-4595-bc67-b01489f1522a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8073652548c6f1614ad95bf6bd708faa.jpg" xmlns="">03rVULL5-ZU2Ln0bErgtmUw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OJF201zvU0K9oGR6eC6ScQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="ptrp.app.cpa.state.tx.us/home/arbitratorregistry" CVScreenId="06308756-67df-4181-8b97-a44025069877" CvTextArea="224, 164, 262, 27" CvTextArgument="Arbitrator Search" CvType="Text" DesignTimeRectangle="216, 154, 1482, 47" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl src='https://app.powerbigov.us/reportEmbed?reportId=*' tag='IFRAME' /&gt;&lt;webctrl tag='path' data-sub-selection-object-name='tile_default' /&gt;" Guid="0d15a5c4-375e-44a4-97aa-0ddaaf9da54e" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Arbitrator Registry' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a466d98f50a61babeab993447c953651.jpg" xmlns="">0E9g0DA1Y5k6l2Ka0JcWWZw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

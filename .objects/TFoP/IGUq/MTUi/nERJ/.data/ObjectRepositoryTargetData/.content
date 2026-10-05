@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9coj7-S04k-uy4ROj8MOSA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="ptrp.app.cpa.state.tx.us/home/arbitratorregistry" CVScreenId="e2550b1e-5a9b-40b5-a728-2582e59f92fa" CvElementArea="1182, 923, 102, 58" CvTextArea="1199, 942, 69, 25" CvTextArgument="Export" CvType="Button" DesignTimeRectangle="1185, 924, 96, 54" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl src='https://app.powerbigov.us/reportEmbed?reportId=*' tag='IFRAME' /&gt;&lt;webctrl aria-label='Export' tag='BUTTON' /&gt;" Guid="ac638899-b6c3-481d-ba85-d5e133274f30" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Arbitrator Registry' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="557084a2d182012a5918003a617a4643.jpg" xmlns="">0m0vadoJS1U65xR9AxVh8UQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ggQ09ZYfUUqjZ4o3_2QxXw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="ptrp.app.cpa.state.tx.us/home/arbitratorregistry" DesignTimeRectangle="510, 410, 270, 324" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl src='https://app.powerbigov.us/reportEmbed?reportId=*' tag='IFRAME' /&gt;&lt;webctrl tag='SECTION' visibleinnertext='Data with current layoutExport this data in the same layout you see now, but without any icons, colors, or other formatting you added.' /&gt;" Guid="47f78107-3681-4d4e-bf0c-47ff5b06dae1" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Arbitrator Registry' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a00c4e8e329c8193d94964a3e2d3155e.jpg" xmlns="">00cuOhilwIEagST-OKMZ9Qw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

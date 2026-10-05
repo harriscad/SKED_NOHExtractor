@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Data with current layou…",
+  "Type": "Element",
+  "Id": "X_QdNT3RrkyZ4X_dV4Wkcw",
+  "Reference": "dt6Y-zIgYEmNBPBvjWvW7A/X_QdNT3RrkyZ4X_dV4Wkcw",
+  "ParentRef": "dt6Y-zIgYEmNBPBvjWvW7A/MTUiGGfnT0ywhEoth2FzBQ",
+  "Created": "2026-10-05T16:33:25.0750713Z",
+  "Updated": "2026-10-05T16:33:25.0750713Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

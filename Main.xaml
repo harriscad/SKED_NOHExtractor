@@ -164,7 +164,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <State x:Name="__ReferenceID0" sap2010:Annotation.AnnotationText="Get the next transaction to be processed." DisplayName="Get Transaction Data" sap:VirtualizedContainerService.HintSize="229.33333333333334,110.66666666666667" sap2010:WorkflowViewState.IdRef="State_4">
       <State.Entry>
-        <Sequence sap2010:Annotation.AnnotationText="Retrieve a new transaction data to be processed.&#xA;The TransactionNumber variable holds the current transaction number and incrementing this variable makes the framework retrieve the next transaction. If the framework is retrying a failed transaction, this variable is not incremented until the maximum number of retry attempts is reached." DisplayName="Retrieve Data" sap:VirtualizedContainerService.HintSize="556.6666666666666,880" sap2010:WorkflowViewState.IdRef="Sequence_25">
+        <Sequence sap2010:Annotation.AnnotationText="Retrieve a new transaction data to be processed.&#xA;The TransactionNumber variable holds the current transaction number and incrementing this variable makes the framework retrieve the next transaction. If the framework is retrying a failed transaction, this variable is not incremented until the maximum number of retry attempts is reached." DisplayName="Retrieve Data" sap:VirtualizedContainerService.HintSize="556.6666666666666,1017.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_25">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="ShouldStop" />
           </Sequence.Variables>
@@ -176,7 +176,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <ui:ShouldStop DisplayName="Check Stop Signal" sap:VirtualizedContainerService.HintSize="522.6666666666666,124" sap2010:WorkflowViewState.IdRef="ShouldStop_2" Result="[ShouldStop]" />
-          <If Condition="[ShouldStop]" DisplayName="Should Stop or Get Next" sap:VirtualizedContainerService.HintSize="522.6666666666666,600.6666666666666" sap2010:WorkflowViewState.IdRef="If_11">
+          <If Condition="[ShouldStop]" DisplayName="Should Stop or Get Next" sap:VirtualizedContainerService.HintSize="522.6666666666666,738" sap2010:WorkflowViewState.IdRef="If_11">
             <If.Then>
               <Sequence DisplayName="Orchestrator stop requested" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_23">
                 <sap:WorkflowViewStateService.ViewState>
@@ -197,13 +197,13 @@
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="488.6666666666667,412.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_45">
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="488.6666666666667,550" sap2010:WorkflowViewState.IdRef="Sequence_45">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <TryCatch DisplayName="Try GetTransactionData" sap:VirtualizedContainerService.HintSize="454.6666666666667,352.6666666666667" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+                <TryCatch DisplayName="Try GetTransactionData" sap:VirtualizedContainerService.HintSize="454.6666666666667,490" sap2010:WorkflowViewState.IdRef="TryCatch_7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -296,7 +296,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <State.Transitions>
-        <Transition DisplayName="New Transaction" sap:VirtualizedContainerService.HintSize="448.8,522.4" sap2010:WorkflowViewState.IdRef="Transition_6">
+        <Transition DisplayName="New Transaction" sap:VirtualizedContainerService.HintSize="451.3333333333333,536.6666666666666" sap2010:WorkflowViewState.IdRef="Transition_6">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:PointCollection x:Key="ConnectorLocation">659.6666666666666,325.6666666666667 659.6666666666666,355.6666666666667 660,355.6666666666667 660,385</av:PointCollection>
@@ -308,7 +308,7 @@
           <Transition.To>
             <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="Process a single transaction. &#xA;The result of the processing can be: 1) Success, 2) Business Exception, 3) System Exception. &#xA;In the case of a system exception, the transaction can be automatically retried." DisplayName="Process Transaction" sap:VirtualizedContainerService.HintSize="240,194.66666666666666" sap2010:WorkflowViewState.IdRef="State_3">
               <State.Entry>
-                <TryCatch DisplayName="Try to process transaction" sap:VirtualizedContainerService.HintSize="676.6666666666666,2804" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+                <TryCatch DisplayName="Try to process transaction" sap:VirtualizedContainerService.HintSize="744.6666666666666,5958" sap2010:WorkflowViewState.IdRef="TryCatch_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -316,14 +316,14 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <TryCatch.Try>
-                    <Sequence DisplayName="Process the current TransactionItem" sap:VirtualizedContainerService.HintSize="638,2541.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                    <Sequence DisplayName="Process the current TransactionItem" sap:VirtualizedContainerService.HintSize="706,5695.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_28">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign DisplayName="Assign BusinessException" sap:VirtualizedContainerService.HintSize="604,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_25">
+                      <Assign DisplayName="Assign BusinessException" sap:VirtualizedContainerService.HintSize="672,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_25">
                         <Assign.To>
                           <OutArgument x:TypeArguments="ui:BusinessRuleException">[BusinessException]</OutArgument>
                         </Assign.To>
@@ -331,7 +331,7 @@
                           <InArgument x:TypeArguments="ui:BusinessRuleException">[Nothing]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Sequence DisplayName="Process Seq" sap:VirtualizedContainerService.HintSize="604,2258.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                      <Sequence DisplayName="Process Seq" sap:VirtualizedContainerService.HintSize="672,4567.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_67">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="strMissingFields" />
                           <Variable x:TypeArguments="sd:DataTable" Name="dt_ReceivedEmailData" />
@@ -343,7 +343,7 @@
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:MultipleAssign DisplayName="Set Init Data" sap:VirtualizedContainerService.HintSize="570,302.6666666666667" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                        <ui:MultipleAssign DisplayName="Set Init Data" sap:VirtualizedContainerService.HintSize="638,333.3333333333333" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                           <ui:MultipleAssign.AssignOperations>
                             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                               <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -394,6 +394,14 @@
                                   <InArgument x:TypeArguments="sd:DataTable">[new System.Data.DataTable]</InArgument>
                                 </ui:AssignOperation.Value>
                               </ui:AssignOperation>
+                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_13">
+                                <ui:AssignOperation.To>
+                                  <OutArgument x:TypeArguments="x:String">[dt_FilterArbitratorList.TableName]</OutArgument>
+                                </ui:AssignOperation.To>
+                                <ui:AssignOperation.Value>
+                                  <InArgument x:TypeArguments="x:String">dt_FilterArbitratorList</InArgument>
+                                </ui:AssignOperation.Value>
+                              </ui:AssignOperation>
                             </scg:List>
                           </ui:MultipleAssign.AssignOperations>
                           <sap:WorkflowViewStateService.ViewState>
@@ -403,8 +411,8 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:MultipleAssign>
-                        <ui:BuildDataTable DataTable="[dt_FormTaskData]" DisplayName="Build dt_ReceivedEmailData Table" sap:VirtualizedContainerService.HintSize="570,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;RBAENumber&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;ArbitratorName&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ArbitratorEmail&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ArbitratorPhone&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;PhysicalAddress&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;SchedulingRequestMail&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;NOHMailAttachment&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;HearingType&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;HearingMeeting_link&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;DialInNumber&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;HearingFromDate&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;HearingFromTime&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;HcadEvidenceDeadline&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;OwnerAgentEvidenceDeadline&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;RebuttalEvidenceDeadline&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;DeliveryMethod&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;HearingToDate&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;HearingToTime&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;HearingName&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Subject&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;EmailSender&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;MessageID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;EmailSenderName&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;EmailReceivedDateTime&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="ValidateQueueRequiredFields - Invoke Workflow File (Framework\ValidateQueueRequiredFields.xaml)" sap:VirtualizedContainerService.HintSize="570,177.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_38" UnSafe="False" WorkflowFileName="Framework\ValidateQueueRequiredFields.xaml">
+                        <ui:BuildDataTable DataTable="[dt_FormTaskData]" DisplayName="Build dt_ReceivedEmailData Table" sap:VirtualizedContainerService.HintSize="638,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;RBAENumber&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;ArbitratorName&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ArbitratorEmail&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ArbitratorPhone&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;PhysicalAddress&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;SchedulingRequestMail&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;NOHMailAttachment&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;HearingType&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;HearingMeeting_link&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;DialInNumber&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;HearingFromDate&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;HearingFromTime&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;HcadEvidenceDeadline&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;OwnerAgentEvidenceDeadline&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;RebuttalEvidenceDeadline&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;DeliveryMethod&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;HearingToDate&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;HearingToTime&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;HearingName&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Subject&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;EmailSender&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;MessageID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;EmailSenderName&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;EmailReceivedDateTime&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="ValidateQueueRequiredFields - Invoke Workflow File (Framework\ValidateQueueRequiredFields.xaml)" sap:VirtualizedContainerService.HintSize="638,177.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_38" UnSafe="False" WorkflowFileName="Framework\ValidateQueueRequiredFields.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
                             <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
                             <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[TransactionItem]</InArgument>
@@ -417,7 +425,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:InvokeWorkflowFile>
-                        <If Condition="[Not String.IsNullOrWhiteSpace(strMissingFields.Replace(&quot;,&quot;, String.Empty))]" DisplayName="If strMissingFields is empty" sap:VirtualizedContainerService.HintSize="570,1594.6666666666667" sap2010:WorkflowViewState.IdRef="If_19">
+                        <If Condition="[Not String.IsNullOrWhiteSpace(strMissingFields.Replace(&quot;,&quot;, String.Empty))]" DisplayName="If strMissingFields is empty" sap:VirtualizedContainerService.HintSize="638,3872.6666666666665" sap2010:WorkflowViewState.IdRef="If_19">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -425,10 +433,13 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <If.Then>
-                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="604,2625.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="604,3684.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="upaf:FormTaskData" Name="TaskObjectOutput" />
+                              </Sequence.Variables>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
@@ -466,10 +477,10 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </Assign>
-                              <TryCatch DisplayName="Try Catch 'Form Task'" sap:VirtualizedContainerService.HintSize="570,57.333333333333336" sap2010:WorkflowViewState.IdRef="TryCatch_14">
+                              <TryCatch DisplayName="Try Catch 'Form Task'" sap:VirtualizedContainerService.HintSize="570,607.3333333333334" sap2010:WorkflowViewState.IdRef="TryCatch_14">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -504,7 +515,7 @@
                                   </upaf:CreateFormTask>
                                 </TryCatch.Try>
                                 <TryCatch.Catches>
-                                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,106.66666666666667" sap2010:WorkflowViewState.IdRef="Catch`1_21">
+                                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.6666666666667,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_21">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -528,7 +539,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:LogMessage>
-                              <upaf:WaitForFormTaskAndResume StatusMessage="{x:Null}" WaitItemDataObject="{x:Null}" DisplayName="Wait for SKED_NOH Form Task and Resume" sap:VirtualizedContainerService.HintSize="570,176.66666666666666" sap2010:WorkflowViewState.IdRef="WaitForFormTaskAndResume_3" TaskAction="[TaskAction]" TaskInput="[TaskObject]" TaskOutput="[TaskObject]" TimeoutMs="30000">
+                              <upaf:WaitForFormTaskAndResume StatusMessage="{x:Null}" WaitItemDataObject="{x:Null}" DisplayName="Wait for SKED_NOH Form Task and Resume" sap:VirtualizedContainerService.HintSize="570,176.66666666666666" sap2010:WorkflowViewState.IdRef="WaitForFormTaskAndResume_3" TaskAction="[TaskAction]" TaskInput="[TaskObject]" TaskOutput="[TaskObjectOutput]" TimeoutMs="30000">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -536,7 +547,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </upaf:WaitForFormTaskAndResume>
-                              <If Condition="[TaskObject.Data IsNot Nothing AndAlso TaskAction.ToString.ToLower.Equals(Config(&quot;TextApprove_Status&quot;).ToString.ToLower)]" DisplayName="If_Checking FormTask Response Status" sap:VirtualizedContainerService.HintSize="570,1982.6666666666667" sap2010:WorkflowViewState.IdRef="If_20">
+                              <If Condition="[TaskObjectOutput.Data IsNot Nothing AndAlso TaskAction.ToString.ToLower.Equals(Config(&quot;TextApprove_Status&quot;).ToString.ToLower)]" DisplayName="If_Checking FormTask Response Status" sap:VirtualizedContainerService.HintSize="570,2492" sap2010:WorkflowViewState.IdRef="If_20">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -544,17 +555,17 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <If.Then>
-                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="536,1794.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="536,1748.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_68">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:LogMessage DisplayName="Log Message_FormSubmited" sap:VirtualizedContainerService.HintSize="502,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_37" Level="Trace" Message="[&quot;Document validated by business from Action Centre and Approved&quot;]">
+                                    <ui:LogMessage DisplayName="Log Message_FormSubmited" sap:VirtualizedContainerService.HintSize="502,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_37" Level="Trace" Message="[&quot;Document validated by business from Action Centre and Approved&quot;]">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
@@ -611,7 +622,7 @@
                                         </Sequence>
                                       </If.Else>
                                     </If>
-                                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{TaskObject.GetDataJsonObject().Item(&quot;rbaeNumber&quot;),&#xA;TaskObject.GetDataJsonObject().Item(&quot;arbitratorName&quot;),&#xA;TaskObject.GetDataJsonObject().Item(&quot;arbitratorEmail1&quot;),&#xA;TaskObject.GetDataJsonObject().Item(&quot;arbitratorPhone1&quot;),&#xA;TaskObject.GetDataJsonObject().Item(&quot;physicalAddress&quot;),&#xA;TaskObject.GetDataJsonObject().Item(&quot;SchedulingRequestMail&quot;),&#xA;TransactionItem.SpecificContent(&quot;NOHMailAttachment&quot;),&#xA;TaskObject.GetDataJsonObject().Item(&quot;hearingType&quot;),&#xA;TaskObject.GetDataJsonObject().Item(&quot;hearingMeetingLink&quot;),&#xA;TaskObject.GetDataJsonObject().Item(&quot;dialInNumber1&quot;),&#xA;TaskObject.GetDataJsonObject().Item(&quot;hearingFromDate&quot;),&#xA;TaskObject.GetDataJsonObject().Item(&quot;time&quot;),&#xA;TaskObject.GetDataJsonObject().Item(&quot;hcadEvidenceDeadline1&quot;),&#xA;TaskObject.GetDataJsonObject().Item(&quot;ownerAgentEvidenceDeadline1&quot;),&#xA;TaskObject.GetDataJsonObject().Item(&quot;rebuttalEvidenceDeadline1&quot;),&#xA;TaskObject.GetDataJsonObject().Item(&quot;deliveryMethod&quot;),&#xA;TaskObject.GetDataJsonObject().Item(&quot;hearingToDate1&quot;),&#xA;TaskObject.GetDataJsonObject().Item(&quot;hearingToTime1&quot;),&#xA;TaskObject.GetDataJsonObject().Item(&quot;hearingType&quot;),&#xA;TransactionItem.SpecificContent(&quot;Subject&quot;),&#xA;TransactionItem.SpecificContent(&quot;EmailSender&quot;),&#xA;TransactionItem.SpecificContent(&quot;MessageID&quot;),&#xA;TransactionItem.SpecificContent(&quot;EmailSenderName&quot;),&#xA;TransactionItem.SpecificContent(&quot;EmailReceivedDateTime&quot;)}]" DataTable="[dt_FormTaskData]" DisplayName="Add Data Row : dt_FormTaskData" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+                                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{TaskObjectOutput.GetDataJsonObject().Item(&quot;rbaeNumber&quot;),&#xD;&#xA;TaskObjectOutput.GetDataJsonObject().Item(&quot;arbitratorName&quot;),&#xD;&#xA;TaskObjectOutput.GetDataJsonObject().Item(&quot;arbitratorEmail1&quot;),&#xD;&#xA;TaskObjectOutput.GetDataJsonObject().Item(&quot;arbitratorPhone1&quot;),&#xD;&#xA;TaskObjectOutput.GetDataJsonObject().Item(&quot;physicalAddress&quot;),&#xD;&#xA;TaskObjectOutput.GetDataJsonObject().Item(&quot;SchedulingRequestMail&quot;),&#xD;&#xA;TransactionItem.SpecificContent(&quot;NOHMailAttachment&quot;),&#xD;&#xA;TaskObjectOutput.GetDataJsonObject().Item(&quot;hearingType&quot;),&#xD;&#xA;TaskObjectOutput.GetDataJsonObject().Item(&quot;hearingMeetingLink&quot;),&#xD;&#xA;TaskObjectOutput.GetDataJsonObject().Item(&quot;dialInNumber1&quot;),&#xD;&#xA;TaskObjectOutput.GetDataJsonObject().Item(&quot;hearingFromDate&quot;),&#xD;&#xA;TaskObjectOutput.GetDataJsonObject().Item(&quot;time&quot;),&#xD;&#xA;TaskObjectOutput.GetDataJsonObject().Item(&quot;hcadEvidenceDeadline1&quot;),&#xD;&#xA;TaskObjectOutput.GetDataJsonObject().Item(&quot;ownerAgentEvidenceDeadline1&quot;),&#xD;&#xA;TaskObjectOutput.GetDataJsonObject().Item(&quot;rebuttalEvidenceDeadline1&quot;),&#xD;&#xA;TaskObjectOutput.GetDataJsonObject().Item(&quot;deliveryMethod&quot;),&#xD;&#xA;TaskObjectOutput.GetDataJsonObject().Item(&quot;hearingToDate1&quot;),&#xD;&#xA;TaskObjectOutput.GetDataJsonObject().Item(&quot;hearingToTime1&quot;),&#xD;&#xA;TaskObjectOutput.GetDataJsonObject().Item(&quot;hearingType&quot;),&#xD;&#xA;TransactionItem.SpecificContent(&quot;Subject&quot;),&#xD;&#xA;TransactionItem.SpecificContent(&quot;EmailSender&quot;),&#xD;&#xA;TransactionItem.SpecificContent(&quot;MessageID&quot;),&#xD;&#xA;TransactionItem.SpecificContent(&quot;EmailSenderName&quot;),&#xD;&#xA;TransactionItem.SpecificContent(&quot;EmailReceivedDateTime&quot;)}]" DataTable="[dt_FormTaskData]" DisplayName="Add Data Row : dt_FormTaskData" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -619,34 +630,51 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:AddDataRow>
-                                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" sap2010:Annotation.AnnotationText="Update Report Information PNL Statement Form paused for human validation in action centre" DisplayName="Update Report Information DB" sap:VirtualizedContainerService.HintSize="502,222.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_40" UnSafe="False" WorkflowFileName="ReusableWorkFlows\UpdateReportInformation.xaml">
-                                      <ui:InvokeWorkflowFile.Arguments>
-                                        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
-                                        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_FormTaskData">[dt_FormTaskData]</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_RoutedToActionCenter">[If(blnhumanManualValidation, "Yes", "No")]</InArgument>
-                                        <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[TransactionItem]</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_CurrentStatus">Awaiting for CMS update</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_IsBusinessException">No</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_ExceptionType">
-                                          <Literal x:TypeArguments="x:String" Value="" />
-                                        </InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_ExceptionDetail">
-                                          <Literal x:TypeArguments="x:String" Value="" />
-                                        </InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_IsApplicationException">No</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_NOHFormat">Mailbody+Attachments(pdf or word ext)</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_NOHReceived">Yes</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_ArbitratorValidatedInCMS">Yes</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_RequiredFieldsComplete">Yes</InArgument>
-                                      </ui:InvokeWorkflowFile.Arguments>
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="502,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,273.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_86">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" sap2010:Annotation.AnnotationText="Update Report Information PNL Statement Form paused for human validation in action centre" DisplayName="Update Report Information DB" sap:VirtualizedContainerService.HintSize="382,213.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_40" UnSafe="False" WorkflowFileName="ReusableWorkFlows\UpdateReportInformation.xaml">
+                                            <ui:InvokeWorkflowFile.Arguments>
+                                              <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
+                                              <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_FormTaskData">[dt_FormTaskData]</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_RoutedToActionCenter">[If(blnhumanManualValidation, "Yes", "No")]</InArgument>
+                                              <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[TransactionItem]</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_CurrentStatus">Awaiting for CMS update</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_IsBusinessException">No</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_ExceptionType">
+                                                <Literal x:TypeArguments="x:String" Value="" />
+                                              </InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_ExceptionDetail">
+                                                <Literal x:TypeArguments="x:String" Value="" />
+                                              </InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_IsApplicationException">No</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_NOHFormat">Mailbody+Attachments(pdf or word ext)</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_NOHReceived">Yes</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_ArbitratorValidatedInCMS">Yes</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_RequiredFieldsComplete">Yes</InArgument>
+                                            </ui:InvokeWorkflowFile.Arguments>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:InvokeWorkflowFile>
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                    </ui:InvokeWorkflowFile>
+                                    </ui:CommentOut>
                                     <ui:LogMessage DisplayName="Log Message 'Updated DB with Queue and Human data'" sap:VirtualizedContainerService.HintSize="502,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_47" Level="Info" Message="[&quot;Updated database with the queue and human provided details&quot;]">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -658,7 +686,7 @@
                                   </Sequence>
                                 </If.Then>
                                 <If.Else>
-                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="422,580.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_66">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:String" Name="ErrorComments" />
                                       <Variable x:TypeArguments="x:String" Name="StrTaskAction" />
@@ -667,15 +695,15 @@
                                     </Sequence.Variables>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:LogMessage DisplayName="Log Message_FormTask Rejected" sap:VirtualizedContainerService.HintSize="388,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_38" Level="Info" Message="[&quot;Document validated by business from Action Centre and Rejected&quot;]">
+                                    <ui:LogMessage DisplayName="Log Message_FormTask Rejected" sap:VirtualizedContainerService.HintSize="388,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_38" Level="Info" Message="[&quot;Document validated by business from Action Centre and Rejected&quot;]">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:LogMessage>
@@ -723,30 +751,47 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:AddDataRow>
-                                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" sap2010:Annotation.AnnotationText="Update Report Information PNL Statement Form paused for human validation in action centre" DisplayName="Update Report Information - DB_from Queue" sap:VirtualizedContainerService.HintSize="388,222.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_48" UnSafe="False" WorkflowFileName="ReusableWorkFlows\UpdateReportInformation.xaml">
-                                      <ui:InvokeWorkflowFile.Arguments>
-                                        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
-                                        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_FormTaskData">[dt_FormTaskData]</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_RoutedToActionCenter">[If(blnhumanManualValidation, "Yes", "No")]</InArgument>
-                                        <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[TransactionItem]</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_CurrentStatus">NOH received</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_IsBusinessException">Yes</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_ExceptionType">BusinessException</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_ExceptionDetail">Action Task is Rejected</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_IsApplicationException">No</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_NOHFormat">Mailbody+Attachments(pdf or word ext)</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_NOHReceived">Yes</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_ArbitratorValidatedInCMS">Yes</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_RequiredFieldsComplete">No</InArgument>
-                                      </ui:InvokeWorkflowFile.Arguments>
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,273.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_87">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" sap2010:Annotation.AnnotationText="Update Report Information PNL Statement Form paused for human validation in action centre" DisplayName="Update Report Information - DB_from Queue" sap:VirtualizedContainerService.HintSize="382,213.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_48" UnSafe="False" WorkflowFileName="ReusableWorkFlows\UpdateReportInformation.xaml">
+                                            <ui:InvokeWorkflowFile.Arguments>
+                                              <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
+                                              <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_FormTaskData">[dt_FormTaskData]</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_RoutedToActionCenter">[If(blnhumanManualValidation, "Yes", "No")]</InArgument>
+                                              <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[TransactionItem]</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_CurrentStatus">NOH received</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_IsBusinessException">Yes</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_ExceptionType">BusinessException</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_ExceptionDetail">Action Task is Rejected</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_IsApplicationException">No</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_NOHFormat">Mailbody+Attachments(pdf or word ext)</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_NOHReceived">Yes</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_ArbitratorValidatedInCMS">Yes</InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="in_RequiredFieldsComplete">No</InArgument>
+                                            </ui:InvokeWorkflowFile.Arguments>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:InvokeWorkflowFile>
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                    </ui:InvokeWorkflowFile>
+                                    </ui:CommentOut>
                                     <ui:LogMessage DisplayName="Log Message Error Comments BE" sap:VirtualizedContainerService.HintSize="388,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_39" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[ErrorComments]">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -755,11 +800,11 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:LogMessage>
-                                    <Throw DisplayName="Throw - Business rule Exception - Error Comments" Exception="[New BusinessRuleException(&quot;BE_AR :&quot;+ErrorComments)]" sap:VirtualizedContainerService.HintSize="388,48" sap2010:WorkflowViewState.IdRef="Throw_2">
+                                    <Throw DisplayName="Throw - Business rule Exception - Error Comments" Exception="[New BusinessRuleException(&quot;Document validated by business from Action Centre and Rejected&quot;)]" sap:VirtualizedContainerService.HintSize="388,114.66666666666667" sap2010:WorkflowViewState.IdRef="Throw_2">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </Throw>
@@ -769,14 +814,14 @@
                             </Sequence>
                           </If.Then>
                           <If.Else>
-                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="536,1406.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_69">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:LogMessage DisplayName="Log Message 'No Human involved'" sap:VirtualizedContainerService.HintSize="502,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_43" Level="Info" Message="[&quot;MandatoryFields available HumanValidation Not Required&quot;]">
+                              <ui:LogMessage DisplayName="Log Message 'No Human involved'" sap:VirtualizedContainerService.HintSize="570,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_43" Level="Info" Message="[&quot;MandatoryFields available HumanValidation Not Required&quot;]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -784,7 +829,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:LogMessage>
-                              <ui:FilterDataTable DataTable="[dt_ArbitratorList]" DisplayName="Filter Data Table 'Arbitrator Name'" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="502,196" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dt_FilterArbitratorList]" SelectColumnsMode="Remove">
+                              <ui:FilterDataTable DataTable="[dt_ArbitratorList]" DisplayName="Filter Data Table 'Arbitrator Name'" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="570,196" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dt_FilterArbitratorList]" SelectColumnsMode="Remove">
                                 <ui:FilterDataTable.Filters>
                                   <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                                     <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
@@ -802,13 +847,25 @@
                                     <x:Null />
                                   </scg:List>
                                 </ui:FilterDataTable.SelectColumns>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
                               </ui:FilterDataTable>
-                              <If Condition="[dt_FilterArbitratorList.RowCount=1]" DisplayName="If 'dtFilterArbitratorList has data'" sap:VirtualizedContainerService.HintSize="502,542" sap2010:WorkflowViewState.IdRef="If_24">
+                              <If Condition="[dt_FilterArbitratorList.RowCount=1]" DisplayName="If 'dtFilterArbitratorList has data'" sap:VirtualizedContainerService.HintSize="570,1192.6666666666667" sap2010:WorkflowViewState.IdRef="If_24">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
                                 <If.Then>
-                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,344.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_80">
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_80">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
@@ -824,19 +881,76 @@
                                   </Sequence>
                                 </If.Then>
                                 <If.Else>
-                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_81">
+                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="536,995.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_81">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:LogMessage DisplayName="Log count&lt;&gt;1" sap:VirtualizedContainerService.HintSize="382,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_49" Level="Warn" Message="[&quot;Filtered arbitrator list has &quot; + dt_FilterArbitratorList.RowCount.ToString + &quot; rows. Expected 1.&quot;]" />
-                                    <Throw DisplayName="Throw BE" Exception="[new BusinessRuleException(&quot;Filtered arbitrator list has &quot; + dt_FilterArbitratorList.RowCount.ToString + &quot; rows. Expected exactly 1.&quot;)]" sap:VirtualizedContainerService.HintSize="382,114.66666666666667" sap2010:WorkflowViewState.IdRef="Throw_4" />
+                                    <ui:FilterDataTable DataTable="[dt_FilterArbitratorList]" DisplayName="Filter Data Table 'Arbitrator Name'" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="502,196" sap2010:WorkflowViewState.IdRef="FilterDataTable_3" OutputDataTable="[dt_FilterArbitratorList]" SelectColumnsMode="Remove">
+                                      <ui:FilterDataTable.Filters>
+                                        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                                          <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                                            <ui:FilterOperationArgument.Column>
+                                              <InArgument x:TypeArguments="x:String">["Arbitrator Name"]</InArgument>
+                                            </ui:FilterOperationArgument.Column>
+                                            <ui:FilterOperationArgument.Operand>
+                                              <InArgument x:TypeArguments="x:String">[If(TransactionItem.SpecificContent("ArbitratorName").ToString().Contains(" "),TransactionItem.SpecificContent("ArbitratorName").ToString().Split(" "c).First(),TransactionItem.SpecificContent("ArbitratorName").ToString())]</InArgument>
+                                            </ui:FilterOperationArgument.Operand>
+                                          </ui:FilterOperationArgument>
+                                        </scg:List>
+                                      </ui:FilterDataTable.Filters>
+                                      <ui:FilterDataTable.SelectColumns>
+                                        <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                          <x:Null />
+                                        </scg:List>
+                                      </ui:FilterDataTable.SelectColumns>
+                                    </ui:FilterDataTable>
+                                    <If Condition="[dt_FilterArbitratorList.RowCount=1]" DisplayName="If 'dtFilterArbitratorList has data'" sap:VirtualizedContainerService.HintSize="502,739.3333333333334" sap2010:WorkflowViewState.IdRef="If_26">
+                                      <If.Then>
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,344.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_84">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:LogMessage DisplayName="Log count=1" sap:VirtualizedContainerService.HintSize="434,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_52" Level="Info" Message="[&quot;Filtered arbitrator list contains exactly 1 row.&quot;]" />
+                                          <Assign DisplayName="Assign 'Arbitrator Name'" sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_35">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Object">[TransactionItem.SpecificContent("ArbitratorName")]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Object">[dt_FilterArbitratorList(0)("Arbitrator Name").ToString]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,232" sap2010:WorkflowViewState.IdRef="Sequence_85">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:LogMessage DisplayName="Log count&lt;&gt;1" sap:VirtualizedContainerService.HintSize="382,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_53" Level="Warn" Message="[&quot;Filtered arbitrator list has &quot; + dt_FilterArbitratorList.RowCount.ToString + &quot; rows. Expected 1.&quot;]">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:LogMessage>
+                                          <Throw DisplayName="Throw BE" Exception="[new BusinessRuleException(&quot;Filtered arbitrator list has &quot; + dt_FilterArbitratorList.RowCount.ToString + &quot; rows. Expected exactly 1.&quot;)]" sap:VirtualizedContainerService.HintSize="382,114.66666666666667" sap2010:WorkflowViewState.IdRef="Throw_6" />
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
                                   </Sequence>
                                 </If.Else>
                               </If>
-                              <Assign DisplayName="Assign 'False'" sap:VirtualizedContainerService.HintSize="502,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_32">
+                              <Assign DisplayName="Assign 'False'" sap:VirtualizedContainerService.HintSize="570,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_32">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:Boolean">[blnhumanManualValidation]</OutArgument>
                                 </Assign.To>
@@ -850,7 +964,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </Assign>
-                              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{TransactionItem.SpecificContent(&quot;RBAENumber&quot;),&#xA;TransactionItem.SpecificContent(&quot;ArbitratorName&quot;),&#xA;TransactionItem.SpecificContent(&quot;Arbitrator Email&quot;),&#xA;TransactionItem.SpecificContent(&quot;ArbitratorPhone&quot;),&#xA;TransactionItem.SpecificContent(&quot;PhysicalAddress&quot;),&#xA;TransactionItem.SpecificContent(&quot;SchedulingRequestMail&quot;),&#xA;TransactionItem.SpecificContent(&quot;NOHMailAttachment&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingType&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingMeeting_link&quot;),&#xA;TransactionItem.SpecificContent(&quot;DialInNumber&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingFromDate&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingFromTime&quot;),&#xA;TransactionItem.SpecificContent(&quot;HcadEvidenceDeadline&quot;),&#xA;TransactionItem.SpecificContent(&quot;OwnerAgentEvidenceDeadline&quot;),&#xA;TransactionItem.SpecificContent(&quot;RebuttalEvidenceDeadline&quot;),&#xA;TransactionItem.SpecificContent(&quot;DeliveryMethod&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingToDate&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingToTime&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingName&quot;),&#xA;TransactionItem.SpecificContent(&quot;Subject&quot;),&#xA;TransactionItem.SpecificContent(&quot;EmailSender&quot;),&#xA;TransactionItem.SpecificContent(&quot;MessageID&quot;),&#xA;TransactionItem.SpecificContent(&quot;EmailSenderName&quot;),&#xA;TransactionItem.SpecificContent(&quot;EmailReceivedDateTime&quot;)}]" DataTable="[dt_FormTaskData]" DisplayName="Add Data Row : dt_ReceivedEmailData with Queue" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_3">
+                              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{TransactionItem.SpecificContent(&quot;RBAENumber&quot;),&#xA;TransactionItem.SpecificContent(&quot;ArbitratorName&quot;),&#xA;TransactionItem.SpecificContent(&quot;Arbitrator Email&quot;),&#xA;TransactionItem.SpecificContent(&quot;ArbitratorPhone&quot;),&#xA;TransactionItem.SpecificContent(&quot;PhysicalAddress&quot;),&#xA;TransactionItem.SpecificContent(&quot;SchedulingRequestMail&quot;),&#xA;TransactionItem.SpecificContent(&quot;NOHMailAttachment&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingType&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingMeeting_link&quot;),&#xA;TransactionItem.SpecificContent(&quot;DialInNumber&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingFromDate&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingFromTime&quot;),&#xA;TransactionItem.SpecificContent(&quot;HcadEvidenceDeadline&quot;),&#xA;TransactionItem.SpecificContent(&quot;OwnerAgentEvidenceDeadline&quot;),&#xA;TransactionItem.SpecificContent(&quot;RebuttalEvidenceDeadline&quot;),&#xA;TransactionItem.SpecificContent(&quot;DeliveryMethod&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingToDate&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingToTime&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingName&quot;),&#xA;TransactionItem.SpecificContent(&quot;Subject&quot;),&#xA;TransactionItem.SpecificContent(&quot;EmailSender&quot;),&#xA;TransactionItem.SpecificContent(&quot;MessageID&quot;),&#xA;TransactionItem.SpecificContent(&quot;EmailSenderName&quot;),&#xA;TransactionItem.SpecificContent(&quot;EmailReceivedDateTime&quot;)}]" DataTable="[dt_FormTaskData]" DisplayName="Add Data Row : dt_ReceivedEmailData with Queue" sap:VirtualizedContainerService.HintSize="570,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_3">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -858,35 +972,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:AddDataRow>
-                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" sap2010:Annotation.AnnotationText="Update Report Information PNL Statement Form paused for human validation in action centre" DisplayName="Update Report Information - DB with Queue" sap:VirtualizedContainerService.HintSize="502,222.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_49" UnSafe="False" WorkflowFileName="ReusableWorkFlows\UpdateReportInformation.xaml">
-                                <ui:InvokeWorkflowFile.Arguments>
-                                  <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
-                                  <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_FormTaskData">[dt_FormTaskData]</InArgument>
-                                  <InArgument x:TypeArguments="x:String" x:Key="in_RoutedToActionCenter">[If(blnhumanManualValidation, "Yes", "No")]</InArgument>
-                                  <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[TransactionItem]</InArgument>
-                                  <InArgument x:TypeArguments="x:String" x:Key="in_CurrentStatus">Awaiting for CMS update</InArgument>
-                                  <InArgument x:TypeArguments="x:String" x:Key="in_IsBusinessException">No</InArgument>
-                                  <InArgument x:TypeArguments="x:String" x:Key="in_ExceptionType">
-                                    <Literal x:TypeArguments="x:String" Value="" />
-                                  </InArgument>
-                                  <InArgument x:TypeArguments="x:String" x:Key="in_ExceptionDetail">
-                                    <Literal x:TypeArguments="x:String" Value="" />
-                                  </InArgument>
-                                  <InArgument x:TypeArguments="x:String" x:Key="in_IsApplicationException">No</InArgument>
-                                  <InArgument x:TypeArguments="x:String" x:Key="in_NOHFormat">Mailbody+Attachments(pdf or word ext)</InArgument>
-                                  <InArgument x:TypeArguments="x:String" x:Key="in_NOHReceived">Yes</InArgument>
-                                  <InArgument x:TypeArguments="x:String" x:Key="in_ArbitratorValidatedInCMS">Yes</InArgument>
-                                  <InArgument x:TypeArguments="x:String" x:Key="in_RequiredFieldsComplete">Yes</InArgument>
-                                </ui:InvokeWorkflowFile.Arguments>
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                              </ui:InvokeWorkflowFile>
-                              <ui:LogMessage DisplayName="Log Message 'Updated DB with QueueData'" sap:VirtualizedContainerService.HintSize="502,48" sap2010:WorkflowViewState.IdRef="LogMessage_44" Level="Info" Message="[&quot;updated database with the queue details&quot;]">
+                              <ui:LogMessage DisplayName="Log Message 'Updated DB with QueueData'" sap:VirtualizedContainerService.HintSize="518,48" sap2010:WorkflowViewState.IdRef="LogMessage_44" Level="Info" Message="[&quot;updated database with the queue details&quot;]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -898,7 +984,7 @@
                           </If.Else>
                         </If>
                       </Sequence>
-                      <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope 'Add Queue Item'" sap:VirtualizedContainerService.HintSize="604,57.333333333333336" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[Cint(Config(&quot;MaxRetryNumber&quot;).ToString)]">
+                      <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope 'Add Queue Item'" sap:VirtualizedContainerService.HintSize="672,460.6666666666667" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[Cint(Config(&quot;MaxRetryNumber&quot;).ToString)]">
                         <ui:RetryScope.ActivityBody>
                           <ActivityAction>
                             <Sequence DisplayName="Action 'Add Queue Item'" sap:VirtualizedContainerService.HintSize="416,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_73">
@@ -943,15 +1029,15 @@
                         </ui:RetryScope.Condition>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:RetryScope>
-                      <TryCatch DisplayName="Try Catch Set Transaction Status (Success)" sap:VirtualizedContainerService.HintSize="604,48" sap2010:WorkflowViewState.IdRef="TryCatch_10">
+                      <TryCatch DisplayName="Try Catch Set Transaction Status (Success)" sap:VirtualizedContainerService.HintSize="672,490" sap2010:WorkflowViewState.IdRef="TryCatch_10">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -1033,7 +1119,7 @@
                     </Sequence>
                   </TryCatch.Try>
                   <TryCatch.Catches>
-                    <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="642.6666666666666,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_9">
+                    <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="658.6666666666666,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_9">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1141,7 +1227,7 @@
                         </Sequence>
                       </ActivityAction>
                     </Catch>
-                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="642.6666666666666,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_10">
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="658.6666666666666,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_10">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1152,7 +1238,7 @@
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="s:Exception" Name="Exception" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Handle System Exception" sap:VirtualizedContainerService.HintSize="488.6666666666667,664.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                        <Sequence DisplayName="Handle System Exception" sap:VirtualizedContainerService.HintSize="488.6666666666667,667.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_30">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1243,115 +1329,6 @@
                       </ActivityAction>
                     </Catch>
                   </TryCatch.Catches>
-                  <TryCatch.Finally>
-                    <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="552,1300.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_49">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <If Condition="[RetryNumber=0]" DisplayName="If RetryNumber=0" sap:VirtualizedContainerService.HintSize="518,1240.6666666666667" sap2010:WorkflowViewState.IdRef="If_15">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484,987.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_59">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <If Condition="[SystemException isnot Nothing]" DisplayName="If SystemException is notNothing" sap:VirtualizedContainerService.HintSize="450,927.3333333333334" sap2010:WorkflowViewState.IdRef="If_16">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <If.Then>
-                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,674" sap2010:WorkflowViewState.IdRef="Sequence_60">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{TransactionItem.SpecificContent(&quot;RBAENumber&quot;),&#xA;TransactionItem.SpecificContent(&quot;ArbitratorName&quot;),&#xA;TransactionItem.SpecificContent(&quot;Arbitrator Email&quot;),&#xA;TransactionItem.SpecificContent(&quot;ArbitratorPhone&quot;),&#xA;TransactionItem.SpecificContent(&quot;PhysicalAddress&quot;),&#xA;TransactionItem.SpecificContent(&quot;SchedulingRequestMail&quot;),&#xA;TransactionItem.SpecificContent(&quot;NOHMailAttachment&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingType&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingMeeting_link&quot;),&#xA;TransactionItem.SpecificContent(&quot;DialInNumber&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingFromDate&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingFromTime&quot;),&#xA;TransactionItem.SpecificContent(&quot;HcadEvidenceDeadline&quot;),&#xA;TransactionItem.SpecificContent(&quot;OwnerAgentEvidenceDeadline&quot;),&#xA;TransactionItem.SpecificContent(&quot;RebuttalEvidenceDeadline&quot;),&#xA;TransactionItem.SpecificContent(&quot;DeliveryMethod&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingToDate&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingToTime&quot;),&#xA;TransactionItem.SpecificContent(&quot;HearingName&quot;),&#xA;TransactionItem.SpecificContent(&quot;Subject&quot;),&#xA;TransactionItem.SpecificContent(&quot;EmailSender&quot;),&#xA;TransactionItem.SpecificContent(&quot;MessageID&quot;),&#xA;TransactionItem.SpecificContent(&quot;EmailSenderName&quot;),&#xA;TransactionItem.SpecificContent(&quot;EmailReceivedDateTime&quot;)}]" DataTable="[dt_FormTaskData]" DisplayName="Add Data Row : dt_ReceivedEmailData" sap:VirtualizedContainerService.HintSize="382,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_6">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </ui:AddDataRow>
-                                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" sap2010:Annotation.AnnotationText="Update Report Information PNL Statement Form paused for human validation in action centre" DisplayName="Update Report Information - Route for Validation" sap:VirtualizedContainerService.HintSize="382,222.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_50" UnSafe="False" WorkflowFileName="ReusableWorkFlows\UpdateReportInformation.xaml">
-                                    <ui:InvokeWorkflowFile.Arguments>
-                                      <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
-                                      <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_FormTaskData">[dt_FormTaskData]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_RoutedToActionCenter">
-                                        <Literal x:TypeArguments="x:String" Value="" />
-                                      </InArgument>
-                                      <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[TransactionItem]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_CurrentStatus">Awaiting for CMS update</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_IsBusinessException">No</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_ExceptionType">SystemException</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_ExceptionDetail">[SystemException.Message]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_IsApplicationException">Yes</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_NOHFormat">Mailbody+Attachments(pdf or word ext)</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_NOHReceived">Yes</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_ArbitratorValidatedInCMS">No</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_RequiredFieldsComplete">No</InArgument>
-                                    </ui:InvokeWorkflowFile.Arguments>
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </ui:InvokeWorkflowFile>
-                                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="SendNotificationEmail - Invoke Workflow File (Notifications\SendNotificationEmail.xaml)" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_37" UnSafe="False" WorkflowFileName="Notifications\SendNotificationEmail.xaml">
-                                    <ui:InvokeWorkflowFile.Arguments>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_Account">[Config("SKED_EmailAccountName").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_ApplicationID">[Config("SKED_AzureApplicationId").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_TenantID">[Config("SKED_AzureTenantID").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_ClientCredentialsName">[Config("SKED_AzureApplicationId").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_ToEmailList">[Config("SKED_SEToRecipients").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_Subject">[Config("FailureEmail_Subject").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_Body">[Config("FailureEmail_Body").ToString.replace("{0}",SystemException.Source).Replace("{1}", SystemException.Message)]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_CcEmailList">[Config("SECcRecipients").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_Screenshot">[ScreenshotPath]</InArgument>
-                                    </ui:InvokeWorkflowFile.Arguments>
-                                  </ui:InvokeWorkflowFile>
-                                </Sequence>
-                              </If.Then>
-                              <If.Else>
-                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_61">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                </Sequence>
-                              </If.Else>
-                            </If>
-                          </Sequence>
-                        </If.Then>
-                        <If.Else>
-                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_64">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </Sequence>
-                        </If.Else>
-                      </If>
-                    </Sequence>
-                  </TryCatch.Finally>
                 </TryCatch>
               </State.Entry>
               <sap:WorkflowViewStateService.ViewState>
@@ -1376,9 +1353,9 @@
                   </sap:WorkflowViewStateService.ViewState>
                   <Transition.Condition>[SystemException IsNot Nothing]</Transition.Condition>
                   <Transition.To>
-                    <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="Read configuration file and initialize applications used in the process." DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="569.3333333333334,3216.6666666666665" sap2010:WorkflowViewState.IdRef="State_2">
+                    <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="Read configuration file and initialize applications used in the process." DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="232,122.66666666666667" sap2010:WorkflowViewState.IdRef="State_2">
                       <State.Entry>
-                        <TryCatch DisplayName="Try initializing settings and applications" sap:VirtualizedContainerService.HintSize="522.6666666666666,2786" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                        <TryCatch DisplayName="Try initializing settings and applications" sap:VirtualizedContainerService.HintSize="522.6666666666666,2818" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1386,7 +1363,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <TryCatch.Try>
-                            <Sequence DisplayName="Load configurations and open applications" sap:VirtualizedContainerService.HintSize="484,2546.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <Sequence DisplayName="Load configurations and open applications" sap:VirtualizedContainerService.HintSize="484,2578.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_4">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1401,7 +1378,7 @@
                                   <InArgument x:TypeArguments="s:Exception">[Nothing]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <If sap2010:Annotation.AnnotationText="An uninitialized Config dictionary indicates that it is the first run of the process." Condition="[Config is Nothing]" DisplayName="If first run, read local configuration file" sap:VirtualizedContainerService.HintSize="450,2109.3333333333335" sap2010:WorkflowViewState.IdRef="If_1">
+                              <If sap2010:Annotation.AnnotationText="An uninitialized Config dictionary indicates that it is the first run of the process." Condition="[Config is Nothing]" DisplayName="If first run, read local configuration file" sap:VirtualizedContainerService.HintSize="450,2044" sap2010:WorkflowViewState.IdRef="If_1">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1550,21 +1527,21 @@
                                   </Sequence>
                                 </If.Then>
                                 <If.Else>
-                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_32">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </Sequence>
                                 </If.Else>
                               </If>
-                              <If sap2010:Annotation.AnnotationText="If MaxConsecutiveSystemExceptions number was reached, throw Exception at initialization and go to End Process state, thus finalizing the execution. &#xA;If MaxConsecutiveSystemExceptions is 0, then any number of consecutive System Exceptions is allowed." Condition="[Cint(Config(&quot;MaxConsecutiveSystemExceptions&quot;))&gt;0 AndAlso ConsecutiveSystemExceptions&gt;=Cint(Config(&quot;MaxConsecutiveSystemExceptions&quot;))]" DisplayName="If maxConsecutiveSystemExceptions exceeded" sap:VirtualizedContainerService.HintSize="450,260" sap2010:WorkflowViewState.IdRef="If_13">
+                              <If sap2010:Annotation.AnnotationText="If MaxConsecutiveSystemExceptions number was reached, throw Exception at initialization and go to End Process state, thus finalizing the execution. &#xA;If MaxConsecutiveSystemExceptions is 0, then any number of consecutive System Exceptions is allowed." Condition="[Cint(Config(&quot;MaxConsecutiveSystemExceptions&quot;))&gt;0 AndAlso ConsecutiveSystemExceptions&gt;=Cint(Config(&quot;MaxConsecutiveSystemExceptions&quot;))]" DisplayName="If maxConsecutiveSystemExceptions exceeded" sap:VirtualizedContainerService.HintSize="450,357.3333333333333" sap2010:WorkflowViewState.IdRef="If_13">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -1708,7 +1685,7 @@
                                                 <InArgument x:TypeArguments="x:String" x:Key="in_Account">[Config("SKED_EmailAccountName").ToString]</InArgument>
                                                 <InArgument x:TypeArguments="x:String" x:Key="in_ApplicationID">[Config("SKED_AzureApplicationId").ToString]</InArgument>
                                                 <InArgument x:TypeArguments="x:String" x:Key="in_TenantID">[Config("SKED_AzureTenantID").ToString]</InArgument>
-                                                <InArgument x:TypeArguments="x:String" x:Key="in_ClientCredentialsName">[Config("SKED_AzureApplicationId").ToString]</InArgument>
+                                                <InArgument x:TypeArguments="x:String" x:Key="in_ClientCredentialsName">[Config("ClientSecret").ToString]</InArgument>
                                                 <InArgument x:TypeArguments="x:String" x:Key="in_ToEmailList">[Config("SKED_SEToRecipients").ToString]</InArgument>
                                                 <InArgument x:TypeArguments="x:String" x:Key="in_Subject">[Config("FailureEmail_Subject").ToString]</InArgument>
                                                 <InArgument x:TypeArguments="x:String" x:Key="in_Body">[Config("FailureEmail_Body").ToString.replace("{0}",SystemException.Source).replace("{1}",SystemException.Message)]</InArgument>
@@ -1803,15 +1780,15 @@ RPA Automation".replace("{0}",SystemException.Source).replace("{1}",SystemExcept
                                         <ActivityAction.Argument>
                                           <DelegateInArgument x:TypeArguments="s:Exception" Name="Exception" />
                                         </ActivityAction.Argument>
-                                        <Sequence DisplayName="Failed to close applications, so kill processes" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                        <Sequence DisplayName="Failed to close applications, so kill processes" sap:VirtualizedContainerService.HintSize="416,448" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                           <ui:LogMessage DisplayName="Log message (Failed to close applications)" sap:VirtualizedContainerService.HintSize="382,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_31" Level="Warn" Message="[&quot;Applications failed to close gracefully. &quot;+Exception.Message+&quot; at Source: &quot;+Exception.Source]" />
-                                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Invoke KillAllProcesses workflow (End process)" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_22" UnSafe="False" WorkflowFileName="Framework\KillAllProcesses.xaml">
+                                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Invoke KillAllProcesses workflow (End process)" sap:VirtualizedContainerService.HintSize="382,211.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_22" UnSafe="False" WorkflowFileName="Framework\KillAllProcesses.xaml">
                                             <ui:InvokeWorkflowFile.Arguments>
                                               <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config" />
                                             </ui:InvokeWorkflowFile.Arguments>
@@ -1944,9 +1921,11 @@ RPA Automation".replace("{0}",SystemException.Source).replace("{1}",SystemExcept
             </State>
           </Transition.To>
           <Transition.Action>
-            <ui:LogMessage DisplayName="Log message (New transaction retrieved)" sap:VirtualizedContainerService.HintSize="348.8,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Info" Message="[Config(&quot;LogMessage_GetTransactionData&quot;).ToString+TransactionNumber.ToString]" />
+            <ui:LogMessage DisplayName="Log message (New transaction retrieved)" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Info" Message="[Config(&quot;LogMessage_GetTransactionData&quot;).ToString+TransactionNumber.ToString]" />
           </Transition.Action>
-          <Transition.Condition>[TransactionItem IsNot Nothing]</Transition.Condition>
+          <Transition.Condition>
+            <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="TransactionItem IsNot Nothing" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+          </Transition.Condition>
         </Transition>
         <Transition sap2010:Annotation.AnnotationText="This is a simple mecanism to stop the process.&#xA;In reallife scenario you can stop the process when there is no more data to process or on a schedule." DisplayName="No Data" sap:VirtualizedContainerService.HintSize="448.8,583.2" sap2010:WorkflowViewState.IdRef="Transition_7">
           <sap:WorkflowViewStateService.ViewState>

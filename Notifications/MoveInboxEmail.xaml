@@ -155,7 +155,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="MoveInboxEmail" sap:VirtualizedContainerService.HintSize="866.6666666666666,1528" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="MoveInboxEmail" sap:VirtualizedContainerService.HintSize="898.6666666666666,1528" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ss:SecureString" Name="ClientSecret" />
     </Sequence.Variables>
@@ -182,7 +182,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetRobotCredential TimeoutMS="{x:Null}" Username="{x:Null}" AssetName="[in_Config(&quot;SKED_AzureClientSecret&quot;).ToString]" CacheStrategy="None" DisplayName="Get ClientSecret" FolderPath="[in_Config(&quot;OrchestratorQueueFolder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="382,167.33333333333334" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[ClientSecret]" />
+            <ui:GetRobotCredential TimeoutMS="{x:Null}" Username="{x:Null}" AssetName="[in_Config(&quot;ClientSecret&quot;).ToString]" CacheStrategy="None" DisplayName="Get ClientSecret" FolderPath="[in_Config(&quot;OrchestratorQueueFolder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="382,167.33333333333334" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[ClientSecret]" />
           </Sequence>
         </ActivityAction>
       </ui:RetryScope.ActivityBody>
@@ -230,7 +230,7 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <umam:GetMail ContinueOnError="{x:Null}" Query="{x:Null}" Account="[in_Config(&quot;EmailInputAccount&quot;).ToString]" AuthScopesInvalid="False" DisplayName="Get Inbox Mail" EmailId="[in_EmailMessageID]" GetAsHTML="False" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetMail_1" MailFolder="[in_MailFolder]" MarkAsRead="False" OnlyUnreadMessages="False" OrderByDate="NewestFirst" Results="[EmailList]" Top="[Cint(in_Config(&quot;EmailTop&quot;).ToString)]" />
+                <umam:GetMail ContinueOnError="{x:Null}" Query="{x:Null}" Top="{x:Null}" Account="[in_Config(&quot;EmailInputAccount&quot;).ToString]" AuthScopesInvalid="False" DisplayName="Get Inbox Mail" EmailId="[in_EmailMessageID]" GetAsHTML="False" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetMail_1" MailFolder="[in_MailFolder]" MarkAsRead="False" OnlyUnreadMessages="False" OrderByDate="NewestFirst" Results="[EmailList]" />
                 <ui:ForEach x:TypeArguments="umm:Office365Message" CurrentIndex="{x:Null}" DisplayName="For Each currentOffice365MailMessage" sap:VirtualizedContainerService.HintSize="450,466.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[EmailList]">
                   <ui:ForEach.Body>
                     <ActivityAction x:TypeArguments="umm:Office365Message">

@@ -122,14 +122,14 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ArbitratorList_Download" sap:VirtualizedContainerService.HintSize="870.6666666666666,2560.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ArbitratorList_Download" sap:VirtualizedContainerService.HintSize="590.6666666666666,3182" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message xaml start" sap:VirtualizedContainerService.HintSize="590.6666666666666,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;ArbitratorList_Download xaml started&quot;]" />
-    <TryCatch DisplayName="Try Catch 'ArbitratorList_Download'" sap:VirtualizedContainerService.HintSize="590.6666666666666,2194" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch 'ArbitratorList_Download'" sap:VirtualizedContainerService.HintSize="590.6666666666666,2815.3333333333335" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -137,7 +137,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Sequence 'ArbitratorList_Download'" sap:VirtualizedContainerService.HintSize="552,1899.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence DisplayName="Sequence 'ArbitratorList_Download'" sap:VirtualizedContainerService.HintSize="552,2437.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -151,13 +151,13 @@
               <InArgument x:TypeArguments="sd:DataTable">[new system.Data.DataTable]</InArgument>
             </Assign.Value>
           </Assign>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Arbitrator Registry" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="518,1722" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="41aa7c1f-a7c5-4e88-a1f3-1628c5a30550" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Arbitrator Registry" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="518,2260" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="41aa7c1f-a7c5-4e88-a1f3-1628c5a30550" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,1515.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,2053.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="upr:ILocalResource" Name="FileResource" />
                     <Variable x:TypeArguments="x:Boolean" Name="blnFileExist" />
@@ -167,20 +167,23 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'License Type'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41aa7c1f-a7c5-4e88-a1f3-1628c5a30550" Version="V5">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="5" DisplayName="Click 'License Type'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,259.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41aa7c1f-a7c5-4e88-a1f3-1628c5a30550" Timeout="60" Version="V5">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="ptrp.app.cpa.state.tx.us/home/arbitratorregistry" CVScreenId="36430990-b349-4a46-845c-4d56841eb920" ContentHash="Bsu7Q6uIGU6tK4MptGxbOA" CvTextArea="1266, 426, 164, 24" CvTextArgument="Ineligible Counties" CvType="Text" DesignTimeRectangle="1263, 413, 411, 62" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='IFRAME' src='https://app.powerbigov.us/reportEmbed?reportId=*' /&gt;&lt;webctrl aria-role='columnheader' tag='DIV' role='element' tabindex='0' column-index='3' /&gt;" Guid="7866085c-745f-44e3-bf32-f88135bf3a77" InformativeScreenshot="de41a21c656038a8ac590fdc75ce2f6d.jpg" Reference="dt6Y-zIgYEmNBPBvjWvW7A/BmSJX1Rgp02lgRlJ5FBUaA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Arbitrator Registry' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                      <uix:TargetAnchorable BrowserURL="ptrp.app.cpa.state.tx.us/home/arbitratorregistry" CVScreenId="36430990-b349-4a46-845c-4d56841eb920" CvTextArea="1266, 426, 164, 24" CvTextArgument="Ineligible Counties" CvType="Text" DesignTimeRectangle="1263, 413, 411, 62" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='IFRAME' src='https://app.powerbigov.us/reportEmbed?reportId=*' /&gt;&lt;webctrl aria-role='columnheader' tag='DIV' role='element' tabindex='0' column-index='3' /&gt;" Guid="7866085c-745f-44e3-bf32-f88135bf3a77" InformativeScreenshot="de41a21c656038a8ac590fdc75ce2f6d.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Arbitrator Registry' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                            <uix:Target CVScreenId="36430990-b349-4a46-845c-4d56841eb920" CvTextArea="917, 428, 112, 22" CvTextArgument="License Type" CvType="Text" DesignTimeRectangle="914, 413, 349, 62" FuzzySelectorArgument="&lt;webctrl src='https://app.powerbigov.us/reportEmbed?reportId=*' matching:src='fuzzy' fuzzylevel:src='0.0' tag='IFRAME' /&gt;&lt;webctrl aaname='License Type' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' aria-role='columnheader' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' tag='DIV' class='pivotTableCellWrap cell-interactive tablixAlignLeft main-cell ' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='License Type' /&gt;" Guid="cc8b43fd-6a19-4625-89a8-12531b8afa49" SearchSteps="FuzzySelector, CV" />
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="36430990-b349-4a46-845c-4d56841eb920" CvTextArea="917, 428, 112, 22" CvTextArgument="License Type" CvType="Text" DesignTimeRectangle="914, 413, 349, 62" FuzzySelectorArgument="&lt;webctrl src='https://app.powerbigov.us/reportEmbed?reportId=*' matching:src='fuzzy' fuzzylevel:src='0.0' tag='IFRAME' /&gt;&lt;webctrl aaname='License Type' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' aria-role='columnheader' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' tag='DIV' class='pivotTableCellWrap cell-interactive tablixAlignLeft main-cell ' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='License Type' /&gt;" Guid="cc8b43fd-6a19-4625-89a8-12531b8afa49" SearchSteps="Selector" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
                       </uix:TargetAnchorable>
                     </uix:NClick.Target>
                     <uix:NClick.VerifyOptions>
                       <uix:VerifyExecutionOptions Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
                         <uix:VerifyExecutionOptions.Target>
-                          <uix:TargetAnchorable BrowserURL="ptrp.app.cpa.state.tx.us/home/arbitratorregistry" CVScreenId="06308756-67df-4181-8b97-a44025069877" ContentHash="OJF201zvU0K9oGR6eC6ScQ" CvTextArea="224, 164, 262, 27" CvTextArgument="Arbitrator Search" CvType="Text" DesignTimeRectangle="216, 154, 1482, 47" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl src='https://app.powerbigov.us/reportEmbed?reportId=*' tag='IFRAME' /&gt;&lt;webctrl tag='path' data-sub-selection-object-name='tile_default' /&gt;" Guid="0d15a5c4-375e-44a4-97aa-0ddaaf9da54e" InformativeScreenshot="a466d98f50a61babeab993447c953651.jpg" Reference="dt6Y-zIgYEmNBPBvjWvW7A/QG3xZoptNUelbsPtd33QaA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Arbitrator Registry' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                          <uix:TargetAnchorable BrowserURL="ptrp.app.cpa.state.tx.us/home/arbitratorregistry" CVScreenId="06308756-67df-4181-8b97-a44025069877" CvTextArea="224, 164, 262, 27" CvTextArgument="Arbitrator Search" CvType="Text" DesignTimeRectangle="216, 154, 1482, 47" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl src='https://app.powerbigov.us/reportEmbed?reportId=*' tag='IFRAME' /&gt;&lt;webctrl tag='path' data-sub-selection-object-name='tile_default' /&gt;" Guid="0d15a5c4-375e-44a4-97aa-0ddaaf9da54e" InformativeScreenshot="a466d98f50a61babeab993447c953651.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Arbitrator Registry' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                         </uix:VerifyExecutionOptions.Target>
                         <uix:VerifyExecutionOptions.Timeout>
                           <InArgument x:TypeArguments="x:Double" />
@@ -189,7 +192,7 @@
                     </uix:NClick.VerifyOptions>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -201,23 +204,26 @@
                   </uix:NClick>
                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export data'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,191.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41aa7c1f-a7c5-4e88-a1f3-1628c5a30550" Version="V5">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="ptrp.app.cpa.state.tx.us/home/arbitratorregistry" CVScreenId="ef756896-f84d-4435-ba8f-5fd4280c74a9" ContentHash="M90-WzAjBkeMdwRnPFbS2A" CvTextArea="1457, 561, 94, 22" CvTextArgument="Export data" CvType="Text" DesignTimeRectangle="1458, 561, 92, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl src='https://app.powerbigov.us/reportEmbed?reportId=35072b6a-c226-4513-b1d0-1a786a9cc15e&amp;amp;groupId=1e2bfb2c-9c1b-4884-bbca-f83c7171b191&amp;amp;w=2&amp;amp;config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLVVTLUdPVi1JT1dBLXJlZGlyZWN0LmFuYWx5c2lzLnVzZ292Y2xvdWRhcGkubmV0IiwiZW1iZWRGZWF0dXJlcyI6eyJ1c2FnZU1ldHJpY3NWTmV4dCI6dHJ1ZX19&amp;amp;uid=og380l' tag='IFRAME' matching:src='fuzzy' fuzzylevel:src='0.0' /&gt;&lt;webctrl aaname='Export data' parentid='0' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Export data' /&gt;" Guid="d282204a-d4f9-443d-ba37-7310996697fe" InformativeScreenshot="8073652548c6f1614ad95bf6bd708faa.jpg" Reference="dt6Y-zIgYEmNBPBvjWvW7A/k_QJ3qWRNUqVkyoqaDHgIQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Arbitrator Registry' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                      <uix:TargetAnchorable BrowserURL="ptrp.app.cpa.state.tx.us/home/arbitratorregistry" CVScreenId="ef756896-f84d-4435-ba8f-5fd4280c74a9" CvTextArea="1457, 561, 94, 22" CvTextArgument="Export data" CvType="Text" DesignTimeRectangle="1458, 561, 92, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl src='https://app.powerbigov.us/reportEmbed?reportId=35072b6a-c226-4513-b1d0-1a786a9cc15e&amp;amp;groupId=1e2bfb2c-9c1b-4884-bbca-f83c7171b191&amp;amp;w=2&amp;amp;config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLVVTLUdPVi1JT1dBLXJlZGlyZWN0LmFuYWx5c2lzLnVzZ292Y2xvdWRhcGkubmV0IiwiZW1iZWRGZWF0dXJlcyI6eyJ1c2FnZU1ldHJpY3NWTmV4dCI6dHJ1ZX19&amp;amp;uid=og380l' tag='IFRAME' matching:src='fuzzy' fuzzylevel:src='0.0' /&gt;&lt;webctrl aaname='Export data' parentid='0' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Export data' /&gt;" Guid="d282204a-d4f9-443d-ba37-7310996697fe" InformativeScreenshot="8073652548c6f1614ad95bf6bd708faa.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Arbitrator Registry' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CVScreenId="ef756896-f84d-4435-ba8f-5fd4280c74a9" CvTextArea="1457, 561, 94, 22" CvTextArgument="Export data" CvType="Text" DesignTimeRectangle="1386, 555, 270, 33" ElementType="Button" FuzzySelectorArgument="&lt;webctrl src='https://app.powerbigov.us/reportEmbed?reportId=*' matching:src='fuzzy' fuzzylevel:src='0.0' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' class='pbi-menu-item' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Export data' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Export data' /&gt;" Guid="ad4741dc-d25a-4595-bc67-b01489f1522a" SearchSteps="FuzzySelector, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
                       </uix:TargetAnchorable>
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Data with current layou…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41aa7c1f-a7c5-4e88-a1f3-1628c5a30550" Version="V5">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Data with current layou…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,259.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41aa7c1f-a7c5-4e88-a1f3-1628c5a30550" Version="V5">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="ptrp.app.cpa.state.tx.us/home/arbitratorregistry" DesignTimeRectangle="510, 410, 270, 324" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl src='https://app.powerbigov.us/reportEmbed?reportId=*' tag='IFRAME' /&gt;&lt;webctrl tag='SECTION' visibleinnertext='Data with current layoutExport this data in the same layout you see now, but without any icons, colors, or other formatting you added.' /&gt;" Guid="47f78107-3681-4d4e-bf0c-47ff5b06dae1" InformativeScreenshot="a00c4e8e329c8193d94964a3e2d3155e.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Arbitrator Registry' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NClick.Target>
                     <uix:NClick.VerifyOptions>
                       <uix:VerifyExecutionOptions Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
                         <uix:VerifyExecutionOptions.Target>
-                          <uix:TargetAnchorable BrowserURL="ptrp.app.cpa.state.tx.us/home/arbitratorregistry" CVScreenId="d5aa64cb-177d-4e43-b807-3c6b888f15da" ContentHash="-walARedlkq9XZ0xAqp0PA" CvElementArea="1182, 923, 102, 58" CvTextArea="1199, 942, 69, 25" CvTextArgument="Export" CvType="Button" DesignTimeRectangle="1185, 924, 96, 54" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl src='https://app.powerbigov.us/reportEmbed?reportId=*' tag='IFRAME' /&gt;&lt;webctrl aria-label='Export' tag='BUTTON' /&gt;" Guid="e2851da0-1faf-4534-95b4-9aa4002658d7" InformativeScreenshot="557084a2d182012a5918003a617a4643.jpg" Reference="dt6Y-zIgYEmNBPBvjWvW7A/Hy17t8xW5UiSB8_uSOuOiQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Arbitrator Registry' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                          <uix:TargetAnchorable BrowserURL="ptrp.app.cpa.state.tx.us/home/arbitratorregistry" CVScreenId="d5aa64cb-177d-4e43-b807-3c6b888f15da" CvElementArea="1182, 923, 102, 58" CvTextArea="1199, 942, 69, 25" CvTextArgument="Export" CvType="Button" DesignTimeRectangle="1185, 924, 96, 54" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl src='https://app.powerbigov.us/reportEmbed?reportId=*' tag='IFRAME' /&gt;&lt;webctrl aria-label='Export' tag='BUTTON' /&gt;" Guid="e2851da0-1faf-4534-95b4-9aa4002658d7" InformativeScreenshot="557084a2d182012a5918003a617a4643.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Arbitrator Registry' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                         </uix:VerifyExecutionOptions.Target>
                         <uix:VerifyExecutionOptions.Timeout>
                           <InArgument x:TypeArguments="x:Double" />
@@ -226,27 +232,27 @@
                     </uix:NClick.VerifyOptions>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NClick>
-                  <ui:GetLastDownloadedFile File="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for DownloadFile" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" FileResource="[FileResource]" sap:VirtualizedContainerService.HintSize="450,256" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+                  <ui:GetLastDownloadedFile File="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for DownloadFile" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" FileResource="[FileResource]" sap:VirtualizedContainerService.HintSize="450,390" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
                     <ui:GetLastDownloadedFile.Body>
                       <ActivityAction>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,242" sap2010:WorkflowViewState.IdRef="Sequence_7">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41aa7c1f-a7c5-4e88-a1f3-1628c5a30550" Version="V5">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,182" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41aa7c1f-a7c5-4e88-a1f3-1628c5a30550" Version="V5">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="ptrp.app.cpa.state.tx.us/home/arbitratorregistry" CVScreenId="e2550b1e-5a9b-40b5-a728-2582e59f92fa" CvElementArea="1182, 923, 102, 58" CvTextArea="1199, 942, 69, 25" CvTextArgument="Export" CvType="Button" DesignTimeRectangle="1185, 924, 96, 54" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl src='https://app.powerbigov.us/reportEmbed?reportId=*' tag='IFRAME' /&gt;&lt;webctrl aria-label='Export' tag='BUTTON' /&gt;" Guid="ac638899-b6c3-481d-ba85-d5e133274f30" InformativeScreenshot="557084a2d182012a5918003a617a4643.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Arbitrator Registry' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                             </uix:NClick.Target>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
@@ -332,7 +338,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="556.6666666666666,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422,106.66666666666667" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -355,7 +361,7 @@
             </Sequence>
           </ActivityAction>
         </Catch>
-        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="556.6666666666666,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="422,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -387,6 +393,6 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:LogMessage DisplayName="Log Message xaml End" sap:VirtualizedContainerService.HintSize="590.6666666666666,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;ArbitratorList_Download xaml ended&quot;]" />
+    <ui:LogMessage DisplayName="Log Message xaml End" sap:VirtualizedContainerService.HintSize="456,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;ArbitratorList_Download xaml ended&quot;]" />
   </Sequence>
 </Activity>

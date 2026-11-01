@@ -127,7 +127,7 @@
       <AssemblyReference>NPOI.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="This workflow updates report data directly into the SQL database using predefined activities and queries. It receives validated inputs, executes the required SQL commands, and ensures accurate updates to the target tables." DisplayName="UpdateReport" sap:VirtualizedContainerService.HintSize="870.6666666666666,1481.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This workflow updates report data directly into the SQL database using predefined activities and queries. It receives validated inputs, executes the required SQL commands, and ensures accurate updates to the target tables." DisplayName="UpdateReport" sap:VirtualizedContainerService.HintSize="870.6666666666666,1424" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -142,7 +142,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <TryCatch DisplayName="Try Catch-Updated record" sap:VirtualizedContainerService.HintSize="522.6666666666666,1188.6666666666667" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch-Updated record" sap:VirtualizedContainerService.HintSize="522.6666666666666,1131.3333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -150,7 +150,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Update Record" sap:VirtualizedContainerService.HintSize="484,894" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Update Record" sap:VirtualizedContainerService.HintSize="484,836.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="sd:DataTable" Name="dt_DBTable" />
           </Sequence.Variables>
@@ -173,7 +173,7 @@
               <scg:Dictionary x:TypeArguments="x:String, Argument" />
             </ui:ExecuteQuery.Parameters>
           </ui:ExecuteQuery>
-          <If Condition="[dt_DBTable.rowcount&gt;0]" DisplayName="If Record found in DB" sap:VirtualizedContainerService.HintSize="450,461.3333333333333" sap2010:WorkflowViewState.IdRef="If_1">
+          <If Condition="[dt_DBTable.rowcount&gt;0]" DisplayName="If Record found in DB" sap:VirtualizedContainerService.HintSize="450,452" sap2010:WorkflowViewState.IdRef="If_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -253,47 +253,6 @@
               </Sequence>
             </If.Else>
           </If>
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-            <ui:CommentOut.Body>
-              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,198.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_4">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ui:ExecuteNonQuery AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Update Report - with human validation" ExistingDbConnection="[in_dbConnection]" sap:VirtualizedContainerService.HintSize="382,138.66666666666666" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_3" Sql="[in_SqlUpdateQuery]">
-                  <ui:ExecuteNonQuery.Parameters>
-                    <InArgument x:TypeArguments="x:String" x:Key="TransactionID">[in_TransactionItem.SpecificContent("RBAENumber").ToString+"-"+in_TransactionItem.SpecificContent("EmailReceivedDateTime").ToString]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="RBACaseNumber">[in_TransactionItem.SpecificContent("RBAENumber").ToString]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="EmailMessageID">[in_TransactionItem.SpecificContent("MessageID").toString]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="EmailReceivedDateTime">[in_TransactionItem.SpecificContent("EmailReceivedDateTime").toString]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="SenderEmail">[in_TransactionItem.SpecificContent("EmailSender").toString]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="SenderName">[in_TransactionItem.SpecificContent("EmailSenderName").toString]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="EmailSubject">[in_TransactionItem.SpecificContent("Subject").toString]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="EmailCategory">Notice of Hearing</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="ArbitratorEmail">[in_TransactionItem.SpecificContent("Arbitrator Email").ToString]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="IsBusinessException">[in_IsBusinessException]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="ExceptionType">[in_ExceptionType]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="ExceptionDetail">[in_ExceptionDetail]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="IsApplicationException">[in_IsApplicationException]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="CurrentStatus">[in_CurrentStatus]</InArgument>
-                  </ui:ExecuteNonQuery.Parameters>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </ui:ExecuteNonQuery>
-              </Sequence>
-            </ui:CommentOut.Body>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </ui:CommentOut>
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>

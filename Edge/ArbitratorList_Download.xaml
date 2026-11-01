@@ -3,6 +3,7 @@
     <x:Property Name="in_ArbitratorRegistryUrl" Type="InArgument(x:String)" />
     <x:Property Name="in_SheetName" Type="InArgument(x:String)" />
     <x:Property Name="out_dt_ArbitratorList" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
@@ -54,6 +55,7 @@
       <x:String>System.Xml.Serialization</x:String>
       <x:String>UiPath.Excel</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -120,6 +122,7 @@
       <AssemblyReference>System.Private.Xml</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="ArbitratorList_Download" sap:VirtualizedContainerService.HintSize="590.6666666666666,3182" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -167,7 +170,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="5" DisplayName="Click 'License Type'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,259.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41aa7c1f-a7c5-4e88-a1f3-1628c5a30550" Timeout="60" Version="V5">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="[Cint(in_Config(&quot;DelayTime_Min&quot;).ToString)]" DisplayName="Click 'License Type_1'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,259.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41aa7c1f-a7c5-4e88-a1f3-1628c5a30550" Timeout="[Cint(in_Config(&quot;MaxRetryNumber_FileUploadStatus&quot;).ToString)]" Version="V5">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="ptrp.app.cpa.state.tx.us/home/arbitratorregistry" CVScreenId="36430990-b349-4a46-845c-4d56841eb920" CvTextArea="1266, 426, 164, 24" CvTextArgument="Ineligible Counties" CvType="Text" DesignTimeRectangle="1263, 413, 411, 62" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='IFRAME' src='https://app.powerbigov.us/reportEmbed?reportId=*' /&gt;&lt;webctrl aria-role='columnheader' tag='DIV' role='element' tabindex='0' column-index='3' /&gt;" Guid="7866085c-745f-44e3-bf32-f88135bf3a77" InformativeScreenshot="de41a21c656038a8ac590fdc75ce2f6d.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Arbitrator Registry' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
                         <uix:TargetAnchorable.Anchors>

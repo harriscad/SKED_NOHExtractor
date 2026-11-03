@@ -125,7 +125,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ArbitratorList_Download" sap:VirtualizedContainerService.HintSize="590.6666666666666,3182" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ArbitratorList_Download" sap:VirtualizedContainerService.HintSize="1194.6666666666667,3182" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -240,7 +240,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NClick>
-                  <ui:GetLastDownloadedFile File="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for DownloadFile" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" FileResource="[FileResource]" sap:VirtualizedContainerService.HintSize="450,390" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+                  <ui:GetLastDownloadedFile File="{x:Null}" IgnoreFiles="{x:Null}" DisplayName="Wait for DownloadFile" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" FileResource="[FileResource]" sap:VirtualizedContainerService.HintSize="450,390" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1" Timeout="[Cint(in_Config(&quot;MaxRetryNumber_FileUploadStatus&quot;).ToString)]">
                     <ui:GetLastDownloadedFile.Body>
                       <ActivityAction>
                         <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,242" sap2010:WorkflowViewState.IdRef="Sequence_7">

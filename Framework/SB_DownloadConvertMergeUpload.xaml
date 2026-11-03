@@ -112,7 +112,7 @@
       <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SB_DownloadConvertMergeUpload" sap:VirtualizedContainerService.HintSize="835.3333333333333,3784.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SB_DownloadConvertMergeUpload" sap:VirtualizedContainerService.HintSize="1194.6666666666667,3066.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="JoinedPdfFileName" />
       <Variable x:TypeArguments="x:String" Name="strPdfPath" />
@@ -123,7 +123,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message xaml start" sap:VirtualizedContainerService.HintSize="710.6666666666666,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;SB_DownloadConvertMergeUpload xaml started&quot;]" />
-    <TryCatch DisplayName="Try Catch 'SB_DownloadConvertMergeUpload'" sap:VirtualizedContainerService.HintSize="710.6666666666666,3418" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch 'SB_DownloadConvertMergeUpload'" sap:VirtualizedContainerService.HintSize="710.6666666666666,2700" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -131,7 +131,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="SB_DownloadConvertMergeUpload" sap:VirtualizedContainerService.HintSize="672,3123.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="SB_DownloadConvertMergeUpload" sap:VirtualizedContainerService.HintSize="672,2405.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="s:String[]" Name="arrPdfFiles" />
           </Sequence.Variables>
@@ -141,7 +141,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder with CaseID" sap:VirtualizedContainerService.HintSize="638,124" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[in_Config(&quot;StorageFileDownloadFolder&quot;).ToString+&quot;\&quot;+in_TransactionItem.SpecificContent(&quot;RBAENumber&quot;).ToString]" />
+          <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder with CaseID" sap:VirtualizedContainerService.HintSize="638,124" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[in_Config(&quot;StorageFileDownloadFolder&quot;).ToString.replace(&quot;{username}&quot;,Environment.UserName)+&quot;\&quot;+in_TransactionItem.SpecificContent(&quot;RBAENumber&quot;).ToString]" />
           <Assign DisplayName="Set NOHMailAttachment" sap:VirtualizedContainerService.HintSize="638,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Object">[in_TransactionItem.SpecificContent("NOHMailAttachment")]</OutArgument>
@@ -150,7 +150,7 @@
               <InArgument x:TypeArguments="x:Object">[in_TransactionItem.SpecificContent("NOHMailAttachment").ToString+";"+in_TransactionItem.SpecificContent("EmailBodyPdfPath").ToString]</InArgument>
             </Assign.Value>
           </Assign>
-          <If Condition="[String.IsNullOrWhiteSpace(&#xA;If(in_TransactionItem.SpecificContent(&quot;NOHMailAttachment&quot;), &quot;&quot;).ToString&#xA;)]" DisplayName="If NOHMailAttachment not empty" sap:VirtualizedContainerService.HintSize="638,2654" sap2010:WorkflowViewState.IdRef="If_5">
+          <If Condition="[String.IsNullOrWhiteSpace(&#xA;If(in_TransactionItem.SpecificContent(&quot;NOHMailAttachment&quot;), &quot;&quot;).ToString&#xA;)]" DisplayName="If NOHMailAttachment not empty" sap:VirtualizedContainerService.HintSize="638,1936" sap2010:WorkflowViewState.IdRef="If_5">
             <If.Then>
               <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_16">
                 <sap:WorkflowViewStateService.ViewState>
@@ -170,7 +170,7 @@
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="604,2456.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_17">
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="604,1738.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_17">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -204,7 +204,7 @@
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <TryCatch DisplayName="Try Catch 'Download file from SB'" sap:VirtualizedContainerService.HintSize="438.6666666666667,299.3333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                              <TryCatch DisplayName="Try Catch 'Download file from SB'" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -222,7 +222,7 @@
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ucas:DownloadStorageFile TimeoutMS="{x:Null}" Destination="[in_Config(&quot;StorageFileDownloadFolder&quot;).ToString+&quot;\&quot;+in_TransactionItem.SpecificContent(&quot;RBAENumber&quot;).ToString+&quot;\&quot;+currentText]" DisplayName="Download Email Attachment File from Storage File" FolderPath="[in_Config(&quot;OrchestratorQueueFolder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="382,220" sap2010:WorkflowViewState.IdRef="DownloadStorageFile_1" Path="[currentText]" StorageBucketName="[in_Config(&quot;OrchestratorStorageAttachmentFolder&quot;).ToString]">
+                                          <ucas:DownloadStorageFile TimeoutMS="{x:Null}" Destination="[in_Config(&quot;StorageFileDownloadFolder&quot;).ToString.replace(&quot;{username}&quot;,Environment.UserName)+&quot;\&quot;+in_TransactionItem.SpecificContent(&quot;RBAENumber&quot;).ToString+&quot;\&quot;+currentText]" DisplayName="Download Email Attachment File from Storage File" FolderPath="[in_Config(&quot;OrchestratorQueueFolder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="382,220" sap2010:WorkflowViewState.IdRef="DownloadStorageFile_1" Path="[currentText]" StorageBucketName="[in_Config(&quot;OrchestratorStorageAttachmentFolder&quot;).ToString]">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -292,7 +292,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:ForEach>
-                <ui:ForEachFileX DisplayName="For Each File in Folder 'RBAENumber'" Folder="[in_Config(&quot;StorageFileDownloadFolder&quot;).ToString+&quot;\&quot;+in_TransactionItem.SpecificContent(&quot;RBAENumber&quot;).ToString]" sap:VirtualizedContainerService.HintSize="570,894.6666666666666" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+                <ui:ForEachFileX DisplayName="For Each File in Folder 'RBAENumber'" Folder="[in_Config(&quot;StorageFileDownloadFolder&quot;).ToString.replace(&quot;{username}&quot;,Environment.UserName)+&quot;\&quot;+in_TransactionItem.SpecificContent(&quot;RBAENumber&quot;).ToString]" sap:VirtualizedContainerService.HintSize="570,894.6666666666666" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
                   <ui:ForEachFileX.Body>
                     <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                       <ActivityAction.Argument1>
@@ -418,16 +418,16 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:ForEachFileX>
-                <Assign DisplayName="Get Pdf Files" sap:VirtualizedContainerService.HintSize="570,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign DisplayName="Get Pdf Files" sap:VirtualizedContainerService.HintSize="570,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
                   <Assign.To>
                     <OutArgument x:TypeArguments="s:String[]">[arrPdfFiles]</OutArgument>
                   </Assign.To>
                   <Assign.Value>
-                    <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(in_Config("StorageFileDownloadFolder").ToString+"\"+in_TransactionItem.SpecificContent("RBAENumber").ToString, "*.pdf")]</InArgument>
+                    <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(in_Config("StorageFileDownloadFolder").ToString.replace("{username}",Environment.UserName)+"\"+in_TransactionItem.SpecificContent("RBAENumber").ToString, "*.pdf")]</InArgument>
                   </Assign.Value>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -437,7 +437,7 @@
                     <OutArgument x:TypeArguments="x:String">[JoinedPdfFileName]</OutArgument>
                   </Assign.To>
                   <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">[in_Config("StorageFileDownloadFolder").ToString+"\"+in_TransactionItem.SpecificContent("RBAENumber").ToString+"\"+in_TransactionItem.SpecificContent("RBAENumber").ToString+".pdf"]</InArgument>
+                    <InArgument x:TypeArguments="x:String">[in_Config("StorageFileDownloadFolder").ToString.replace("{username}",Environment.UserName)+"\"+in_TransactionItem.SpecificContent("RBAENumber").ToString+"\"+in_TransactionItem.SpecificContent("RBAENumber").ToString+".pdf"]</InArgument>
                   </Assign.Value>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -483,7 +483,7 @@
                     </Sequence>
                   </If.Else>
                 </If>
-                <TryCatch DisplayName="Try Catch 'Upload file to SB'" sap:VirtualizedContainerService.HintSize="488.66666666666674,826" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                <TryCatch DisplayName="Try Catch 'Upload file to SB'" sap:VirtualizedContainerService.HintSize="570,48" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -501,7 +501,7 @@
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ucas:UploadStorageFile Path="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Upload Joined pdf into Storage File" FileResource="[UiPath.Platform.ResourceHandling.LocalResource.FromPath(System.IO.Path.Combine(&#xA;in_Config(&quot;StorageFileDownloadFolder&quot;).ToString, &#xA;in_TransactionItem.SpecificContent(&quot;RBAENumber&quot;).ToString, &#xA;in_TransactionItem.SpecificContent(&quot;RBAENumber&quot;).ToString + &quot;.pdf&quot;))]" FolderPath="[in_Config(&quot;OrchestratorQueueFolder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="382,325.3333333333333" sap2010:WorkflowViewState.IdRef="UploadStorageFile_1" StorageBucketName="[in_Config(&quot;OrchestratorStorageAttachmentFolder&quot;).ToString]">
+                            <ucas:UploadStorageFile Path="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Upload Joined pdf into Storage File" FileResource="[UiPath.Platform.ResourceHandling.LocalResource.FromPath(System.IO.Path.Combine(&#xD;&#xA;in_Config(&quot;StorageFileDownloadFolder&quot;).ToString.replace(&quot;{username}&quot;,Environment.UserName), &#xD;&#xA;in_TransactionItem.SpecificContent(&quot;RBAENumber&quot;).ToString, &#xD;&#xA;in_TransactionItem.SpecificContent(&quot;RBAENumber&quot;).ToString + &quot;.pdf&quot;))]" FolderPath="[in_Config(&quot;OrchestratorQueueFolder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="382,325.3333333333333" sap2010:WorkflowViewState.IdRef="UploadStorageFile_1" StorageBucketName="[in_Config(&quot;OrchestratorStorageAttachmentFolder&quot;).ToString]">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -524,10 +524,10 @@
                     </ui:RetryScope>
                   </TryCatch.Try>
                   <TryCatch.Catches>
-                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,216.66666666666666" sap2010:WorkflowViewState.IdRef="Catch`1_4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -535,7 +535,7 @@
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                         </ActivityAction.Argument>
-                        <ui:LogMessage DisplayName="Log failed to download file" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Fatal" Message="[in_Config(&quot;SB_FailToUploadFile&quot;).ToString+in_Config(&quot;StorageFileDownloadFolder&quot;).ToString+&quot;\&quot;+in_TransactionItem.SpecificContent(&quot;RBAENumber&quot;).ToString+&quot;\&quot;+in_TransactionItem.SpecificContent(&quot;RBAENumber&quot;).ToString+&quot;.pdf  and Error : &quot;+exception.Message]" />
+                        <ui:LogMessage DisplayName="Log failed to download file" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Fatal" Message="[in_Config(&quot;SB_FailToUploadFile&quot;).ToString+in_Config(&quot;StorageFileDownloadFolder&quot;).ToString.replace(&quot;{username}&quot;,Environment.UserName)+&quot;\&quot;+in_TransactionItem.SpecificContent(&quot;RBAENumber&quot;).ToString+&quot;\&quot;+in_TransactionItem.SpecificContent(&quot;RBAENumber&quot;).ToString+&quot;.pdf  and Error : &quot;+exception.Message]" />
                       </ActivityAction>
                     </Catch>
                   </TryCatch.Catches>
@@ -543,10 +543,10 @@
               </Sequence>
             </If.Else>
           </If>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="DeleteFileFromLocalFolder - Invoke Workflow File (ReusableWorkFlows\DeleteFileFromLocalFolder.xaml)" sap:VirtualizedContainerService.HintSize="450,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ReusableWorkFlows\DeleteFileFromLocalFolder.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="DeleteFileFromLocalFolder - Invoke Workflow File (ReusableWorkFlows\DeleteFileFromLocalFolder.xaml)" sap:VirtualizedContainerService.HintSize="638,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ReusableWorkFlows\DeleteFileFromLocalFolder.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="in_FolderPath">[in_Config("StorageFileDownloadFolder").ToString+"\"+in_TransactionItem.SpecificContent("RBAENumber").ToString]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_FolderPath">[in_Config("StorageFileDownloadFolder").ToString.replace("{username}",Environment.UserName)+"\"+in_TransactionItem.SpecificContent("RBAENumber").ToString]</InArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
         </Sequence>
@@ -607,6 +607,6 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:LogMessage DisplayName="Log Message xaml End" sap:VirtualizedContainerService.HintSize="522.6666666666666,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;SB_DownloadConvertMergeUpload xaml ended&quot;]" />
+    <ui:LogMessage DisplayName="Log Message xaml End" sap:VirtualizedContainerService.HintSize="710.6666666666666,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;SB_DownloadConvertMergeUpload xaml ended&quot;]" />
   </Sequence>
 </Activity>

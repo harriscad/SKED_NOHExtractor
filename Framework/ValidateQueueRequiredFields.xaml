@@ -116,7 +116,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ValidateQueueRequiredFields" sap:VirtualizedContainerService.HintSize="898.6666666666666,1842" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ValidateQueueRequiredFields" sap:VirtualizedContainerService.HintSize="1194.6666666666667,1842" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -182,7 +182,15 @@ in_TransactionItem.SpecificContent("HearingToDate").ToString(), in_TransactionIt
                     <OutArgument x:TypeArguments="x:Object">[in_TransactionItem.SpecificContent("HearingToTime")]</OutArgument>
                   </ui:AssignOperation.To>
                   <ui:AssignOperation.Value>
-                    <InArgument x:TypeArguments="x:Object">[If(String.IsNullOrWhiteSpace(in_TransactionItem.SpecificContent("HearingToTime").ToString()), DateTime.Parse(in_TransactionItem.SpecificContent("HearingFromTime").ToString()).AddMinutes(30).ToString("hh:mm tt"), DateTime.Parse(in_TransactionItem.SpecificContent("HearingToTime").ToString()).ToString("hh:mm tt"))]</InArgument>
+                    <InArgument x:TypeArguments="x:Object" xml:space="preserve">[If(
+    String.IsNullOrWhiteSpace(Convert.ToString(in_TransactionItem.SpecificContent("HearingToTime"))),
+    If(
+        String.IsNullOrWhiteSpace(Convert.ToString(in_TransactionItem.SpecificContent("HearingFromTime"))),
+        "",
+        DateTime.Parse(Convert.ToString(in_TransactionItem.SpecificContent("HearingFromTime"))).AddMinutes(30).ToString("hh:mm tt")
+    ),
+    DateTime.Parse(Convert.ToString(in_TransactionItem.SpecificContent("HearingToTime"))).ToString("hh:mm tt")
+)]</InArgument>
                   </ui:AssignOperation.Value>
                 </ui:AssignOperation>
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
